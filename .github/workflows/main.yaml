@@ -15,5 +15,6 @@ jobs:
         with:
           username: thalessantanna
           password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: thalessantanna/compare-coroutines-webflux
           tags: ${{ github.sha }}, latest
 
