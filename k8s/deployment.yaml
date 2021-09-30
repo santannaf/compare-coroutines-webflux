@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kotlinapp
+spec:
+  selector:
+    matchLabels:
+      app: kotlinapp
+  template:
+    metadata:
+      labels:
+        app: kotlinapp
+    spec:
+      containers:
+        - name: kotlinapp
+          image: kotlinapp
+          ports:
+            - containerPort: 8080

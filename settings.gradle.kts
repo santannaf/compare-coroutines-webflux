@@ -1,1 +1,1 @@
-rootProject.name = "coroutines"
+rootProject.name = "app"

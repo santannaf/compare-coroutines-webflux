@@ -1,3 +1,5 @@
+@file:Suppress("GradlePackageUpdate")
+
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -8,8 +10,9 @@ plugins {
 }
 
 group = "com.demo"
-version = "0.0.1-SNAPSHOT"
+version = "0.0.1"
 java.sourceCompatibility = JavaVersion.VERSION_11
+java.targetCompatibility = JavaVersion.VERSION_11
 
 repositories {
 	mavenCentral()
@@ -34,6 +37,10 @@ dependencies {
 
 	//GUAVA FOR CACHE
 	implementation("com.google.guava:guava:30.1.1-jre")
+}
+
+tasks.getByName<Jar>("jar") {
+	enabled = false
 }
 
 tasks.withType<KotlinCompile> {
