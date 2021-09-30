@@ -1,6 +1,7 @@
 FROM openjdk:11 as build
 WORKDIR /app
 COPY . .
+RUN chmod +x 765 ./gradlew
 RUN ./gradlew clean build -x test
 
 FROM openjdk:11.0.10-jre
