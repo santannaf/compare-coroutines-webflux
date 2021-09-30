@@ -44,4 +44,4 @@ jobs:
           git commit -am "Change tag image to program"
 
       - name: Push
-        run: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@master
