@@ -8,5 +8,5 @@ namespace: kotlinapp
 
 images:
 - name: kotlinapp
-  newName: kotlinapp
-  newTag: v1
+  newName: thalessantanna/compare-coroutines-webflux
+  newTag: b23519d8f0b7e17f85ee1d25b1e490db8ab0ccda
